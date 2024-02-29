@@ -1,0 +1,549 @@
+
+:root {
+  --clr-primary: #130f40 ;
+  --clr-accent: #f93f61;}
+ 
+img {
+  max-height: 100vh; 
+  width: 100%;
+}
+
+
+
+
+.Appvideo  { text-align: center; 
+             height: 100vh;
+}
+
+
+.Appvideo h2  { color: white;
+          display: inline-block;
+          font-size: 40px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          }                    
+ .Appvideo h4 { padding-bottom: 10px;}
+
+.Appvideo .text-wrapper {color:  white;
+                    /* margin-top: 120px;
+                    width: 500px;
+                    padding: 50px 20px ;
+                    margin-left: auto;
+                    margin-right: 60%; */
+                    font-family:  'Dancing Script', cursive;
+                    font-family: 'Lato', sans-serif;
+                    font-family: 'Playfair Display', serif;
+                    font-family: 'Poppins', sans-serif;
+                    font-family: 'Roboto Condensed', sans-serif;
+                    font-family: 'Rubik', sans-serif;
+                text-align: left; 
+                /* font-size: 1rem;
+                line-height: 1.9; */
+
+              }
+                
+.Appvideo video { position: absolute;
+
+            z-index:-1 ;
+            top:0;
+            left: 0;
+            width: 100%;
+             }                
+
+
+
+             /* Media Query for smaller screens */
+@media only screen and (max-width:  576px) 
+
+{
+  .Appvideo video {
+
+    height: 450px;
+  }
+  .Appvideo{
+    height: 300px;
+  }
+.text-wrapper {
+  top: 30% !important;
+  z-index: 1;
+} 
+  
+}
+
+
+.Appvideo .text-wrapper {
+      width: 100%; /* Adjusted width for smaller screens */
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 0.1rem;
+  }
+
+
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+.section-body{ background-image: url(./image/stacked-waves-haikei\ \(4\).svg); 
+  background-repeat: no-repeat;
+   background-size: cover;
+   }
+
+   .section-services {margin-top: 120px; 
+ 
+}
+   
+
+  .cards-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding-top: 100px; /* Adjusted padding for mobile */
+    padding-bottom: 50px; /* Adjusted padding for mobile */
+    height: 100px;
+   
+  }
+  
+  .Cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px; /* Adjusted padding for mobile */
+    max-width: 1100px;
+  }
+  
+  .Cards .card {
+    position: relative;
+    width: 100%; /* Adjusted width for mobile */
+    max-width: 260px;
+    height: auto; /* Adjusted height for mobile */
+    background: #fff;
+    margin: 15px 20px; /* Adjusted margin for mobile */
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+   
+    
+  }
+  
+  .Cards .card:hover {
+    height: auto; /* Adjusted height for mobile */
+  }
+  
+  .Cards .card .imgBx {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjusted height for mobile */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .Cards .card .imgBx img {
+    width: 100%;
+    height: 100%; /* Adjusted height for mobile */
+    object-fit: cover; /* Maintain aspect ratio for images */
+    border-radius: 4px;
+  }
+  
+  .Cards .card .content {
+    position: relative;
+    padding: 10px 15px;
+    text-align: center;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0 0 4px 4px;
+    margin-top: -140px;
+  }
+  
+  .Cards .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.4s;
+  }
+  
+  /* Media Query for screens with a maximum width of 768px (typical for mobile phones) */
+  @media only screen and (max-width: 768px) {
+    .cards-services {
+      padding-top: 500px; /* Adjusted padding for smaller screens */
+      padding-bottom: 30px; /* Adjusted padding for smaller screens */
+    }
+  
+    .Cards .card {
+      max-width: 100%; /* Adjusted max-width for smaller screens */
+    }
+  
+    .Cards .card .imgBx {
+      height: 150px; /* Adjusted height for smaller screens */
+    }
+  
+    .Cards .card .content {
+      margin-top: -100px; /* Adjusted margin for smaller screens */
+    }
+  }
+  
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.section-swiper{ padding-top: 120px;}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.text-services { background-color:#dfe4ea;
+                padding: 10px;
+                color: var(--clr-primary);
+                text-align: center;
+                font-weight: 700;}
+
+ .img-service { width: 50px; height: 70px;}               
+
+
+.section-fin{ padding-top: 150PX;}
+@media only screen and (max-width: 768px) {
+  .section-fin {
+    padding-top: 460px; /* Adjusted padding for smaller screens */
+    padding-bottom: 30px; /* Adjusted padding for smaller screens */
+  }}
+
+/* CSS page reservation */
+
+.section-planning{ background-image: url(./image/stacked-waves-haikei\ \(4\).svg); 
+  background-repeat: no-repeat;
+   background-size: cover;
+   }
+
+.terrain img{ width: 50px; 
+  height: 50px;
+
+  margin: auto;
+}
+
+  .img-reservation{ background: rgba(0, 0, 0, 0.7);}
+
+  .stadium{ font-size: 20px;
+               font-weight: bold;
+               margin-top: 30px;
+           gap: 40px;  }
+
+  .foot-passion{  color:#fa983a ; 
+                  font-weight: bold;}         
+
+ .time { background-color: #130f40 ;
+   width: 45%; 
+   margin: auto;
+   border-top: 10px dotted #f0932b;
+   border-right: 10px dashed #f0932b;
+   border-bottom: 10px groove #f0932b;
+   border-left: 10px solid #f0932b;   
+ }   
+
+
+ 
+ .reservation.carousel-caption {
+  bottom: 225px;
+  z-index: 2;
+  font-family: cursive;
+}
+
+.carousel-caption h3 {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  padding-right: 550px;
+  font-weight: bold;
+}
+
+.reservation.carousel-caption p {
+  width: 100%;
+  font-size: 20px;
+  margin-top: 10px;
+  padding-right: 300px;
+  text-align: justify;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h3 {
+    font-size: 24px;
+    letter-spacing: 4px;
+    padding-right: 0;
+  }
+
+  .reservation.carousel-caption p {
+    padding-right: 0;
+  }
+}
+
+  
+
+       
+
+
+
+
+
+/* --------CSS page Evenement --------- */
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.hero {
+  background-color: #182C61;
+  color: #fff;
+  padding-block: 5rem;
+}
+
+.hero .hero-info {
+  margin-top: 4rem;
+}
+
+.hero-info p {
+  margin-block: 1rem;
+}
+.wrapper {
+  width: min(100% - 2rem, 75rem);
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+      var(--columns, 1),
+      1fr
+  );
+  gap: 2rem;
+}
+
+@media (min-width: 50rem) {
+  .grid[data-columns="2"],
+  .grid[data-columns="3"]
+  {
+      --columns: 2;
+  }
+}
+
+@media (min-width: 70rem) {
+  .grid[data-columns="3"]
+  {
+      --columns: 3;
+  }
+  .grid[data-columns="4"]
+  {
+      --columns: 4;
+  }
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 190px;
+  height: 254px;
+  perspective: 1000px;
+  font-family: sans-serif;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid coral;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+     rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+  color: coral;
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+     bisque 40%, rgb(255, 185, 160) 78%);
+  color: white;
+  transform: rotateY(180deg);
+}
+  .alarme{ width: 50px;
+          margin: auto;  
+          margin-top: 40px;
+          margin-bottom: 40px; }
+
+ .font{ 
+  font-family: 'Dancing Script', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Rubik', sans-serif;
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Style des en-têtes de colonne (th) */
+th {
+  background-color: orange;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Style des cellules de données (td) */
+td {
+  padding: 2px;
+  border: 1px solid #ddd;
+}
+
+/* Style des lignes impaires pour une meilleure lisibilité */
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+
+}
+.btn-reserver:hover{ background-color: green; }
+
+/* Hover sur les lignes pour un effet interactif */
+
+/* --------- shop --- */
+.about_section{ background-image: url(./image/stacked-waves-haikei\ \(4\).svg)}
+.about_section .row {
+  padding-top: 20px;
+   -webkit-box-align: center;
+  -ms-flex-align: center;
+    align-items: center;
+    
+  }
+  .about_section .img_container .img-box img {
+     width: 100%;
+    }
+    
+    .about_section .detail-box {
+     background-color: var(--clr-primary);
+     padding: 15px 15px;
+     -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
+     position: relative;
+     margin-left: -45px;
+     color: white;
+    }
+    
+    .about_section .detail-box p {
+     margin-top: 5px;
+    }
+    
+    .about_section .detail-box a {
+     display: inline-block;
+     padding: 10px 35px;
+     background-color: #f1db25;
+     color: #ffffff;
+     -webkit-transition: all 0.3s;
+     transition: all 0.3s;
+     border: 1px solid transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+    
+    .about_section .detail-box a:hover {
+     background-color: transparent;
+     border-color: #f1db25;
+     color: #f1db25;
+    }
+    /* -------------------shop css---------- */
+
+
+
+
+     /* ------- Footer CSS------  */
+    footer {
+      background-color: var(--clr-primary);
+      color: #fff;
+      padding: 20px 10px;
+  }
+  
+  .footer-content {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+  .contact-info {
+      max-width: 400px;
+  }
+  
+.social-footer { margin-top: 20px; } 
+.icons-social{height: 30px; margin: 10px;}
+
+.icons-social :hover{ color: white; transform: translate(1.2) ;
+                      cursor: pointer; }
+
+
+                    
+
+
+
+                      

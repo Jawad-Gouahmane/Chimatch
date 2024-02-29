@@ -1,0 +1,43 @@
+.sidebar {
+  background-color: #130f40;
+}
+.sidebar .nav {
+  padding: 0 !important;
+}
+.sidebar a:hover {
+  background-color: blue;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.btnpages:hover {
+  background-color: #130f40;
+  color: white;
+}
+
+.btnpages:focus {
+  border: none;
+  color: blue;
+}
+
+.reserv {
+  width: 65rem;
+  height: 74vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.datetime {
+  width: 450px;
+}
+
+.addreservation {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  margin-left: 150px;
+}
